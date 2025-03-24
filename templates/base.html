@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,18 +8,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <script src="{% static 'js/index.js' %}"></script>
 
     {% block titulo %}
     <title>Pokayoke</title>
     {% endblock titulo %} {% block extra_head %} {% endblock extra_head %}
   </head>
   <body>
-    {% block navbar %} {% endblock navbar %} {% block content %} {% endblock
-    content %} {% block footer %} {% endblock footer %} {% block javascript %}}
-
-    <script src="script.js"></script>
-
-    {% endblock javascript %}
+    {% block navbar %} {% endblock navbar %} 
+    {% block content %} {% endblock content %} 
+    {% block footer %} {% endblock footer %} 
+    {% block javascript %} {% endblock javascript %}
   </body>
 </html>
