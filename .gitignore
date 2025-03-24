@@ -1,0 +1,8 @@
+db.sqlite3
+requirements.txt
+venv/
+pokayoke/__pycache__/
+pokayoke/migrations/
+/pokayoke/__init__.py
+/core/__pycache__/
+/core/__init__.py
