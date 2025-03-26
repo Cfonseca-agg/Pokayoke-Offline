@@ -1,0 +1,15 @@
+{
+  "name": "pokayoke_offline",
+  "version": "1.0.0",
+  "description": "Pokayoke Offline desktop app",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pokayoke_offline": "electron ."
+  },
+  "author": "Christian Fonseca",
+  "license": "SEE LICENCE IN README",
+  "devDependencies": {
+    "electron": "^35.0.3"
+  }
+}

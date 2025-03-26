@@ -6,3 +6,6 @@ pokayoke/migrations/
 /pokayoke/__init__.py
 /core/__pycache__/
 /core/__init__.py
+staticfiles/
+node_modules/
+launch.bat
