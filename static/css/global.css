@@ -1,0 +1,53 @@
+/* Barra personalizada */
+.custom-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 30px;
+    background: transparent; /* Barra invisible por defecto */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: background 0.3s ease;
+  }
+  
+  .custom-bar:hover {
+    background: rgba(0, 0, 0, 0.5); /* Fondo visible al pasar el cursor */
+  }
+  
+  .button {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    background: gray;
+    border: none;
+    color: white;
+    opacity: 0; /* Invisible por defecto */
+    transition: opacity 0.3s ease, background 0.3s ease;
+  }
+  
+  .custom-bar:hover .button {
+    opacity: 1; /* Los botones se hacen visibles al pasar el cursor */
+  }
+  
+  .minimize-button {
+    background: yellow;
+    color: black;
+  }
+  
+  .minimize-button:hover {
+    background: gold;
+  }
+  
+  .close-button {
+    background: red;
+  }
+  
+  .close-button:hover {
+    background: darkred;
+  }

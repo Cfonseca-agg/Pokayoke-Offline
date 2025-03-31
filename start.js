@@ -1,15 +1,23 @@
-
 const { app, BrowserWindow } = require("electron");
 
 function ElectronMainMethod() {
+    const { screen } = require("electron");
+    const display = screen.getPrimaryDisplay();
+    const screenWidth = display.workAreaSize.width;
+    const screenHeight = display.workAreaSize.height;
+
     const launchWindow = new BrowserWindow({
-        title: "Pokayoke Offline",
-        width: 777,
-        height: 444
+        autoHideMenuBar: true,
+        width: screenWidth,
+        height: screenHeight,
+        //titleBarStyle: "hiddenInset", // Oculta la barra pero deja los botones de minimizar y cerrar
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation: false,
+        },
     });
 
-    const appURL = "http://localhost:8000";
-    launchWindow.loadURL(appURL);
+    launchWindow.loadURL("http://localhost:8000");
 }
 
 app.whenReady().then(ElectronMainMethod);

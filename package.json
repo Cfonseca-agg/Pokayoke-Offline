@@ -11,5 +11,8 @@
   "license": "SEE LICENCE IN README",
   "devDependencies": {
     "electron": "^35.0.3"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.1.2"
   }
 }
